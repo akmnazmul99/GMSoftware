@@ -1,0 +1,839 @@
+/* ==========================================================================
+   Author's custom css stylesheet
+   ========================================================================== */
+/*
+Author: A.K.M. Nazmul Islam
+Author's URL: nazmulislamredoy.wordpress.com
+vsersion: 1.0
+*/
+* {
+    font-family: "Raleway",sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family: 'Californian-fb-italic';
+    src: local('Californian-fb-italic'), url(../fonts/californian-fb-italic.ttf) format('ttf');
+}
+@font-face {
+    font-family: 'Century-gothic-regular';
+    src: local('Century-gothic-regular'), url(../fonts/century-gothic-regular.ttf) format('ttf');
+}
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: local('Century-gothic-regular'), url(../fonts/HelveticaNeue-thin.ttf) format('ttf');
+}
+@font-face {
+    font-family: 'Century-gothic-bold';
+    src: local('Century-gothic-bold'), url(../fonts/century-gothic-bold.ttf) format('ttf');
+}
+@font-face {
+    font-family: 'HelveticaLight';
+    src: local('HelveticaLight'), url(../fonts/HelveticaLight.ttf) format('ttf');
+}
+
+.background {
+    /* IE10+ */ 
+    background-image: -ms-linear-gradient(bottom, #DADDE2 0%, #DDDEE3 50%, #D8DAE1 100%);
+
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(bottom, #DADDE2 0%, #DDDEE3 50%, #D8DAE1 100%);
+
+    /* Opera */ 
+    background-image: -o-linear-gradient(bottom, #DADDE2 0%, #DDDEE3 50%, #D8DAE1 100%);
+
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #DADDE2), color-stop(50, #DDDEE3), color-stop(100, #D8DAE1));
+
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(bottom, #DADDE2 0%, #DDDEE3 50%, #D8DAE1 100%);
+
+    /* W3C Markup */ 
+    background-image: linear-gradient(to top, #DADDE2 0%, #DDDEE3 50%, #D8DAE1 100%);
+
+}
+
+/*===================================== Home ==============================================*/
+.headder_section{
+    margin-top: 6px;
+}
+
+.welcome_title{
+    font-family: HelveticaNeue;
+    color: #ff0004;
+    font-weight: normal!important;
+}
+
+.inner-addon {
+    position: relative;
+}
+
+.inner-addon .glyphicon {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+}
+
+.left-addon .glyphicon  { 
+    left:  0px;
+}
+
+.right-addon .glyphicon { 
+    background-color: #fd6e6e;
+    color: #ed1c24;
+    right: 0;
+}
+
+.left-addon input  { 
+    padding-left:  30px; 
+}
+
+.right-addon input { 
+    padding-right: 30px; 
+}
+
+.logo_text{
+    font-family: Californian-fb-italic;
+    color: #ff000a;
+    font-size: 24px;
+    font-style: italic;
+}
+
+.logo_inline_block img, .logo_inline_block .logo_text{
+    display: inline-block;
+}
+
+.logo_inline_block .logo_text {
+    margin-left: -8px;
+    margin-top: 18px;
+    position: absolute;
+}
+
+.search_navbar_form_custom {
+    background-color: #000;
+    border-radius: 6px;
+    padding: 6px;
+    margin-top: 10px;
+}
+
+.form_control_custom {
+    height: 28px;
+    padding: 3px 6px;
+}
+
+.btn_custom {
+    height: 28px;
+    padding: 3px 6px;
+}
+
+.search_input_custom{
+    width: 220px!important;
+}
+
+.search_btn_custom{
+    border: none;
+    color: #fff;
+}
+
+.search_btn_custom:hover{
+    border: none;
+    color: #fd6e6e;
+}
+
+.column_adjust{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#menu li a{
+    padding: 0 40px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.pgwMenu #menu {
+    float: right;
+}
+
+#menu li{
+    float: left;
+}
+
+.carousel_indicators_custom {
+    bottom: 0px;
+    left: 30%;
+    list-style: outside none none;
+    margin-left: -30%;
+    padding-left: 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 15;
+    background-color: #FD6E6E!important;
+    padding: 10px 0;
+}
+
+.carousel_indicators_custom .active{
+    border: 1px solid #ED1C24!important;
+    background-color: #ED1C24!important;
+}
+
+.carousel_control_custom, .carousel_control_custom:hover{
+    background-image: none!important;
+}
+
+.welcome_section{
+    background-color: #dcddde;
+    margin: -30px;
+    padding: 30px;
+}
+
+.welcome_note{
+    font-family: Century-gothic-regular;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.pagelet{
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.main_services_section{
+    margin-top: 40px;
+}
+
+.main_services_title img, .main_services_title h2{
+    display: inline-block;
+}
+
+.main_services_title img{
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.main_services_title > h2, .featured_services_title > h2{
+    font-family: Century-gothic-bold;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.main_services_content{
+    font-family: 'Century-gothic-regular';
+}
+
+.main_services_custom_button{
+    background-color: #fd6e6e; 
+    color: #000; 
+    border-radius: 4px; 
+    font-weight: bold; 
+    float: right;
+}
+
+.main_services_custom_button:hover{
+    background: none;
+    border: 1px solid #ED1C24;
+    color: #000; 
+    border-radius: 4px; 
+    font-weight: bold; 
+    float: right;
+}
+
+.featured_services_title img, .featured_services_title h2{
+    display: inline-block;
+}
+
+.featured_services_title > img{
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.featured_services_pagelet{
+    background-color: #eff2f7;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.featured_services_pagelet img, .featured_services_pagelet h4{
+    display: inline-block;
+}
+
+.featured_services_pagelet img{
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+.featured_services_pagelet h4{
+    font-family: 'Century-gothic-regular';
+    font-size: 20px;
+    border-bottom: 2px solid #e82f2f;
+    color: #e82f2f;
+    margin-left: -10px;
+}
+
+.featured_services_pagelet h5{
+    font-family: 'Century-gothic-regular';
+    font-size: 16px;
+}
+
+.fromCenter { 
+    color: #666;
+    display: inline-block; 
+    margin: 0;
+    cursor: pointer;
+}
+
+.fromCenter:after {
+    display: block;
+    content: '';
+    border-bottom: 2px solid #ED1C24;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+.fromCenter:hover:after { 
+    transform: scaleX(1); 
+}
+
+.client_logo_wrapper{
+    background-color: #e5e8ed;
+}
+
+.client_slide > .carousel-inner > a > img, .client_slide > .carousel-inner > span{
+    display: inline-block;
+}
+
+.footer_section{
+    height: 50px;
+    background-color: #ED1C24;
+}
+
+.footer_text_section{
+    font-family: 'Century-gothic-regular';
+    background-color: #FD6E6E;
+    color: #fff;
+    height: 50px;
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.footer_row_custom,.footer_column_custom{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media (min-width: 1200px){
+    .slicknav_menu{
+        display: none;
+    }
+    .welcome_title{
+        font-size: 72px;
+        margin: 0;
+    }
+    .social-buttons, .inner-addon{
+        margin-top: 15px;   
+    }
+    .main_services_content{
+        height: 195px;
+    }
+    .featured_services_pagelet h4{
+        margin-left: -10px;
+        font-size: 20px;
+    }
+    .fromCenter { 
+        width: 60%;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px){
+    .slicknav_menu{
+        display: none;
+    }
+    .welcome_title{
+        font-size: 72px;
+        margin: 0;
+    }
+    .social-buttons, .inner-addon{
+        margin-top: 15px;   
+    }
+    .main_services_content{
+        height: 235px;
+    }
+    .featured_services_pagelet h4{
+        margin-left: 0px;
+        display: block;
+        font-size: 18px;
+    }
+    .featured_services_pagelet > .fromCenter { 
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .slicknav_menu{
+        display: none;
+    }
+    .welcome_title{
+        font-size: 72px;
+        margin: 0;
+    }
+    .social-buttons, .inner-addon{
+        margin-top: 15px;   
+    }
+    .main_services_content{
+        height: 345px;
+    }
+    .featured_services_pagelet h4{
+        margin-left: -7px;
+        font-size: 18px;
+    }
+    .featured_services_pagelet > .fromCenter { 
+        width: 100%;
+    }
+}
+
+@media (max-width:767px){
+    .menu_bar{
+        display: none;
+    }
+    .welcome_title{
+        font-size: 48px;
+        margin: 0;
+    }
+    .featured_services_pagelet > .fromCenter { 
+        width: 80%;
+    }
+}
+
+.slicknav_menu{
+    background-color: #FD6E6E;
+}
+
+.slicknav_btn{
+    background-color: #ED1C24;
+}
+
+.slicknav_nav > li >a:hover{
+    background-color: #FF5456;
+    color: #FFF;
+}
+
+/*===================================== About ==============================================*/
+
+.who_we_are_section, .why_us_section, .team_member_section{
+    margin-bottom: 60px;
+}
+
+.who_we_are_title, .why_us_title, .team_member_title{
+    font-family: 'HelveticaLight';
+    color: #ff0004;
+    font-weight: bold;
+    border-bottom: 1px solid #ED1C24;
+}
+
+.who_we_are_content{
+    font-family: 'Century-gothic-regular';
+    font-size: 14px;
+    margin-top: -5px;
+}
+
+.who_we_are_button{
+    font-family: 'Century-gothic-regular';
+    background-color: #CCCCCC;
+    color: #ED1C24;
+}
+
+.who_we_are_button:hover{
+    background-color: #CCCCCC;
+    border: 1px solid #ED1C24;
+}
+
+.why_us_pagelet{
+    margin-top: 3px;
+}
+
+.why_us_pagelet > img, .why_us_pagelet > h5{
+    display: inline-block;
+}
+
+.why_us_pagelet img{
+    background-color: #cccccc; 
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.why_us_pagelet h5{
+    font-family: 'HelveticaLight';
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-top: 0px;
+}
+
+.partial{
+    font-family: 'HelveticaLight';
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-top: 0px;
+}
+
+.why_us_pagelet h6{
+    font-family: 'Century-gothic-regular';
+    font-size: 15px;
+}
+
+.why_us_pagelet a{
+    font-family: 'Century-gothic-regular';
+    font-size: 14px;
+    color: #ED1C24;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.team_member_pagelet{
+    background-color: #eff2f7;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.team_member_pagelet:hover{
+    background-color: #FD6E6E;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #ED1C24;
+}
+
+.team_member_pagelet:hover > img{
+    border-radius: 50%;
+}
+
+.team_member_pagelet:hover > h4{
+    color: #fff;
+}
+
+.team_member_pagelet h3{
+    color: #ED1C24;
+}
+
+@media (min-width: 1200px){
+    .who_we_are_title, .why_us_title, .team_member_title{
+        width: 65%;
+    }
+    .why_us_img_align_adjust{
+        margin-top: -20px;
+    }
+    .why_us_content_align_adjust{
+        margin-top: 8px;
+    }
+    .why_us_pagelet span{
+        display: block;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px){
+    .who_we_are_image{
+        height: 215px;  
+    }
+    .why_us_image{
+        height: 240px;
+    }
+    .why_us_pagelet > h5{
+        display: inline-block;
+        margin-bottom: 20px
+    }
+    .why_us_content_align_adjust{
+        margin-top: -10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .who_we_are_image{
+        height: 300px;  
+    }
+    .why_us_image{
+        height: 296px;
+    }
+    .why_us_pagelet > h5{
+        display: inline-block;
+        margin-bottom: 20px
+    }
+    .why_us_content_align_adjust{
+        margin-top: -10px;
+    }
+}
+
+@media (max-width:767px){
+    .footer_text_section{
+        text-align: center;
+    }
+}
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
