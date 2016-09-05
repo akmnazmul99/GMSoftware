@@ -15,8 +15,9 @@
         <link type="text/css" rel="stylesheet" href="css/normalize.css">
         <link type="text/css" rel="stylesheet" href="css/slicknav.min.css">
         <link type="text/css" rel="stylesheet" href="css/menu.css">
-        <link type="text/css" rel="stylesheet" href="css/social_icons.css">
-        <link type="text/css" rel="stylesheet" href="css/client_slider.css">
+        <link type="text/css" rel="stylesheet" href="css/social-icons.css">
+        <link type="text/css" rel="stylesheet" href="css/client-slider.css">
+        <link type="text/css" rel="stylesheet" href="css/animate.min.css">
         <link type="text/css" rel="stylesheet" href="css/style.css">
 
         <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
@@ -24,6 +25,8 @@
         <script type="text/javascript" src="js/jquery.flexisel.js"></script>
         <script type="text/javascript" src="js/plugins.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/wow.min.js"></script>
+        <script type="text/javascript" src="js/wow-callback.js"></script>
         <script type="text/javascript" src="js/modernizr-2.8.3.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
     </head>
@@ -34,13 +37,13 @@
         <section  class="headder_section">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-offset-1 col-sm-3 form-group">
+                    <div class="col-sm-4 form-group">
                         <div class="logo_inline_block">
                             <img src="images/logo.png" class="img-responsive" alt="logo">
                             <div class="logo_text">Software</div>
                         </div>
                     </div>
-                    <div class="col-sm-4 form-group">
+                    <div class="col-sm-5 form-group">
                         <div class="social-buttons">
                             <a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a>
                             <a href="#" class="social-button google"><i class="fa fa-google"></i></a>
@@ -84,25 +87,31 @@
         <section class="pagelet_section">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-offset-1 col-sm-10">
+                    <div class="col-sm-12">
                         <div class="pagelet">
                             <section class="who_we_are_section">
                                 <div class="row form-group">
                                     <div class="col-sm-offset-4 col-sm-4">
-                                        <h1 class="who_we_are_title text-uppercase text-center">Who we are?</h1>
+                                        <div class="text-center">
+                                            <h1 class="who_we_are_title text-uppercase">Who we are?</h1>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row form-group">
-                                    <div class="col-sm-5 form-group">
-                                        <img src="images/about/who_we_are.png" class="img-responsive who_we_are_image" alt="Who we are?"> 
+                                    <div class="col-sm-5 form-group wow fadeInLeft">
+                                        <img src="images/about/who_we_are.jpg" class="img-responsive who_we_are_image" alt="Who we are?"> 
                                     </div>
-                                    <div class="col-sm-7 form-group">
-                                        <p class="who_we_are_content text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, 
-                                            consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor
-                                            sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem 
-                                            ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing 
-                                            elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet,</p>
+                                    <div class="col-sm-7 form-group wow fadeInRight">
+                                        <p class="who_we_are_content text-justify">
+                                            Phasellus id lobortis risus. Donec tristique ullamcorper tortor non pulvinar. Praesent ullamcorper
+                                            sem ac enim pharetra, sit amet ultricies justo cursus. Donec rhoncus ipsum tellus, sit amet porta 
+                                            massa fringilla vitae. Proin nisi ex, iaculis quis massa eget, lacinia rhoncus ipsum. Duis non erat
+                                            sem. Nulla diam tellus, aliquam sit amet turpis et, imperdiet posuere risus. Cum sociis natoque penatibus
+                                            et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque eget efficitur leo. Aenean efficitur
+                                            posuere quam iaculis sollicitudin. Sed placerat justo sed tempus varius. Phasellus hendrerit mauris vitae
+                                            posuere sollicitudin. Aenean tempor metus vel purus tincidunt posuere nec sit amet mauris. In faucibus 
+                                            ornare justo, sit amet posuere sapien lobortis in. 
+                                        </p>
                                         <button class="btn btn-sm who_we_are_button">Read More</button>
                                     </div>
                                 </div>
@@ -115,32 +124,47 @@
                                     </div>
                                 </div>
                                 <div class="row form-group">
-                                    <div class="col-sm-5 form-group">
-                                        <img src="images/about/why_us/why_us.png" class="img-responsive why_us_image" alt="Why us?"> 
+                                    <div class="col-sm-5 form-group wow fadeInLeft">
+                                        <img src="images/about/why_us/why_us.jpg" class="img-responsive why_us_image" alt="Why us?"> 
                                     </div>
                                     <div class="col-sm-7 form-group">
                                         <div class="row form-group">
-                                            <div class="col-sm-4 form-group">
+                                            <div class="col-sm-4 form-group wow fadeInDown">
                                                 <div class="why_us_pagelet form-group">
                                                     <img src="images/about/why_us/customer_oriented.png" class="img-responsive why_us_img_align_adjust" alt="Customer oriented"> 
                                                     <h5>Customer <span class="partial">Oriented</span></h5>
-                                                    <h6 class="text-justify why_us_content_align_adjust">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, Lorem ipsum dolor sit </h6>
+                                                    <h6 class="text-justify why_us_content_align_adjust">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus odio non leo dictum egestas. Ut eget nisl
+                                                        vitae ante tempus lobortis vitae non quam. Donec dignissim, nisi a aliquam rhoncus, ligula erat pretium sem,
+                                                        et dignissim justo magna eu eros. Donec id eleifend turpis, vitae auctor metus. Praesent eget dui sit amet 
+                                                        eget turpis elit. Nam vel porta neque. 
+                                                    </h6>
                                                     <a href="">More.....</a>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-4 form-group">
+                                            <div class="col-sm-4 form-group  wow fadeInUp">
                                                 <div class="why_us_pagelet">
                                                     <img src="images/about/why_us/professional.png" class="img-responsive" alt="Professional"> 
                                                     <h5>Professional</h5>
-                                                    <h6 class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, Lorem ipsum dolor sit </h6>
+                                                    <h6 class="text-justify">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus odio non leo dictum egestas. Ut eget nisl
+                                                        vitae ante tempus lobortis vitae non quam. Donec dignissim, nisi a aliquam rhoncus, ligula erat pretium sem,
+                                                        et dignissim justo magna eu eros. Donec id eleifend turpis, vitae auctor metus. Praesent eget dui sit amet 
+                                                        eget turpis elit. Nam vel porta neque.
+                                                    </h6>
                                                     <a href="">More.....</a>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-4 form-group">
+                                            <div class="col-sm-4 form-group wow fadeInRight">
                                                 <div class="why_us_pagelet">
                                                     <img src="images/about/why_us/cooperative.png" class="img-responsive" alt="Cooperative"> 
                                                     <h5>Cooperative</h5>
-                                                    <h6 class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, Lorem ipsum dolor sit </h6>
+                                                    <h6 class="text-justify">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus odio non leo dictum egestas. Ut eget nisl
+                                                        vitae ante tempus lobortis vitae non quam. Donec dignissim, nisi a aliquam rhoncus, ligula erat pretium sem,
+                                                        et dignissim justo magna eu eros. Donec id eleifend turpis, vitae auctor metus. Praesent eget dui sit amet 
+                                                        eget turpis elit. Nam vel porta neque.
+                                                    </h6>
                                                     <a href="">More.....</a>
                                                 </div>
                                             </div>
@@ -148,8 +172,6 @@
                                     </div>
                                 </div>
                             </section>
-
-
 
                             <section class="team_member_section">
                                 <div class="row form-group">
@@ -158,38 +180,36 @@
                                     </div>
                                 </div>
                                 <div class="row form-group">
-                                    <div class="col-sm-3 form-group">
+                                    <div class="col-sm-3 form-group wow bounceIn">
                                         <div class="team_member_pagelet">
                                             <img src="images/about/team_member/1.jpg" class="img-responsive" alt="Team member"> 
                                             <h3 class="text-center">Mr. AAA</h3>
-                                            <h4 class="text-center">CEO, Founder of GMSoftware</h4>
+                                            <h5 class="text-center">CEO, Founder of GMSoftware</h5>
                                         </div>
                                     </div>
-                                    <div class="col-sm-3 form-group">
+                                    <div class="col-sm-3 form-group wow bounceIn">
                                         <div class="team_member_pagelet">
                                             <img src="images/about/team_member/2.jpg" class="img-responsive" alt="Team member"> 
                                             <h3 class="text-center">Mr. BBB</h3>
-                                            <h4 class="text-center">Web Devloper, GMSoftware</h4>
+                                            <h5 class="text-center">Web Devloper, GMSoftware</h5>
                                         </div>
                                     </div>
-                                    <div class="col-sm-3 form-group">
+                                    <div class="col-sm-3 form-group wow bounceIn">
                                         <div class="team_member_pagelet">
                                             <img src="images/about/team_member/3.jpg" class="img-responsive" alt="Team member"> 
                                             <h3 class="text-center">Mr. CCC</h3>
-                                            <h4 class="text-center">Web Devloper, GMSoftware</h4>
+                                            <h5 class="text-center">Web Devloper, GMSoftware</h5>
                                         </div>
                                     </div>
-                                    <div class="col-sm-3 form-group">
+                                    <div class="col-sm-3 form-group wow bounceIn">
                                         <div class="team_member_pagelet">
                                             <img src="images/about/team_member/4.jpg" class="img-responsive" alt="Team member"> 
                                             <h3 class="text-center">Mr. DDD</h3>
-                                            <h4 class="text-center">Web Devloper, GMSoftware</h4>
+                                            <h5 class="text-center">Web Devloper, GMSoftware</h5>
                                         </div>
                                     </div>
                                 </div>
                             </section>
-
-
                         </div>
                     </div>
                 </div>

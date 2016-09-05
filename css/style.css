@@ -8,7 +8,7 @@ vsersion: 1.0
 */
 * {
     font-family: "Raleway",sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     margin: 0;
     padding: 0;
 }
@@ -58,7 +58,7 @@ vsersion: 1.0
 
 /*===================================== Home ==============================================*/
 .headder_section{
-    margin-top: 6px;
+    margin-top: 10px;
 }
 
 .welcome_title{
@@ -92,13 +92,14 @@ vsersion: 1.0
 }
 
 .right-addon input { 
-    padding-right: 30px; 
+    padding-right: 36px; 
+    margin-top: 15px;
 }
 
 .logo_text{
     font-family: Californian-fb-italic;
     color: #ff000a;
-    font-size: 24px;
+    font-size: 28px;
     font-style: italic;
 }
 
@@ -108,7 +109,7 @@ vsersion: 1.0
 
 .logo_inline_block .logo_text {
     margin-left: -8px;
-    margin-top: 18px;
+    margin-top: 20px;
     position: absolute;
 }
 
@@ -150,7 +151,7 @@ vsersion: 1.0
 
 #menu li a{
     padding: 0 40px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -193,7 +194,7 @@ vsersion: 1.0
 
 .welcome_note{
     font-family: Century-gothic-regular;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px;
 }
 
@@ -321,6 +322,7 @@ vsersion: 1.0
     padding-top: 20px;
     padding-left: 20px;
     width: 100%;
+    font-size: 12px;
 }
 
 .footer_row_custom,.footer_column_custom{
@@ -335,12 +337,13 @@ vsersion: 1.0
     .welcome_title{
         font-size: 72px;
         margin: 0;
+        text-align: center;
     }
     .social-buttons, .inner-addon{
-        margin-top: 15px;   
+        margin-top: 12px;   
     }
     .main_services_content{
-        height: 195px;
+        height: 140px;
     }
     .featured_services_pagelet h4{
         margin-left: -10px;
@@ -363,7 +366,7 @@ vsersion: 1.0
         margin-top: 15px;   
     }
     .main_services_content{
-        height: 235px;
+        height: 175px;
     }
     .featured_services_pagelet h4{
         margin-left: 0px;
@@ -380,14 +383,14 @@ vsersion: 1.0
         display: none;
     }
     .welcome_title{
-        font-size: 72px;
+        font-size: 58px;
         margin: 0;
     }
     .social-buttons, .inner-addon{
         margin-top: 15px;   
     }
     .main_services_content{
-        height: 345px;
+        height: 275px;
     }
     .featured_services_pagelet h4{
         margin-left: -7px;
@@ -403,7 +406,7 @@ vsersion: 1.0
         display: none;
     }
     .welcome_title{
-        font-size: 48px;
+        font-size: 38px;
         margin: 0;
     }
     .featured_services_pagelet > .fromCenter { 
@@ -439,8 +442,9 @@ vsersion: 1.0
 
 .who_we_are_content{
     font-family: 'Century-gothic-regular';
-    font-size: 14px;
+    font-size: 16px;
     margin-top: -5px;
+    line-height: 28px;
 }
 
 .who_we_are_button{
@@ -458,10 +462,6 @@ vsersion: 1.0
     margin-top: 3px;
 }
 
-.why_us_pagelet > img, .why_us_pagelet > h5{
-    display: inline-block;
-}
-
 .why_us_pagelet img{
     background-color: #cccccc; 
     padding: 5px;
@@ -470,7 +470,7 @@ vsersion: 1.0
 
 .why_us_pagelet h5{
     font-family: 'HelveticaLight';
-    font-size: 16px;
+    font-size: 15px;
     color: #333;
     font-weight: bold;
     margin-right: 5px;
@@ -479,7 +479,7 @@ vsersion: 1.0
 
 .partial{
     font-family: 'HelveticaLight';
-    font-size: 16px;
+    font-size: 15px;
     color: #333;
     font-weight: bold;
     margin-right: 5px;
@@ -511,13 +511,17 @@ vsersion: 1.0
     border-radius: 5px;
     cursor: pointer;
     border: 2px solid #ED1C24;
+    box-shadow: 0 0 25px #FD6E6E;
 }
 
 .team_member_pagelet:hover > img{
     border-radius: 50%;
 }
 
-.team_member_pagelet:hover > h4{
+.team_member_pagelet > h5{
+    font-weight: bold;
+}
+.team_member_pagelet:hover > h5{
     color: #fff;
 }
 
@@ -526,14 +530,14 @@ vsersion: 1.0
 }
 
 @media (min-width: 1200px){
-    .who_we_are_title, .why_us_title, .team_member_title{
-        width: 65%;
+    .why_us_pagelet > img, .why_us_pagelet > h5{
+        display: inline-block;
     }
     .why_us_img_align_adjust{
         margin-top: -20px;
     }
     .why_us_content_align_adjust{
-        margin-top: 8px;
+        margin-top: 11px;
     }
     .why_us_pagelet span{
         display: block;
@@ -542,33 +546,33 @@ vsersion: 1.0
 
 @media (min-width:992px) and (max-width:1199px){
     .who_we_are_image{
-        height: 215px;  
+        height: 340px;  
     }
     .why_us_image{
-        height: 240px;
+        height: 390px;
     }
     .why_us_pagelet > h5{
         display: inline-block;
         margin-bottom: 20px
     }
-    .why_us_content_align_adjust{
-        margin-top: -10px;
+    .why_us_pagelet h6{
+     margin-top: 0px;   
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px){
     .who_we_are_image{
-        height: 300px;  
+        height: 425px;  
     }
     .why_us_image{
-        height: 296px;
+        height: 525px;
     }
     .why_us_pagelet > h5{
         display: inline-block;
         margin-bottom: 20px
     }
     .why_us_content_align_adjust{
-        margin-top: -10px;
+        margin-top: -6px;
     }
 }
 

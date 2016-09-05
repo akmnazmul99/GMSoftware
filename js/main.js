@@ -16,5 +16,3 @@ $(window).load(function() {
         }
     });
 });
-
-
